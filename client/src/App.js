@@ -19,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="joinChatContainer">
       <h3>Join chat</h3>
       <input
         type="text"
@@ -35,6 +36,7 @@ function App() {
         }}
       ></input>
       <button onClick={joinRoom}>Join Room</button>
+      </div>
       
     <Chat socket={socket} username={username} room={room}/>
     </div>
